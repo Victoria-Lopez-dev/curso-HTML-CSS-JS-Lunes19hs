@@ -1,0 +1,96 @@
+/* comentarios */
+
+/* selectores -> formas de llamar a los elementos del HTML */
+/* selectores -> por clase, por id ,etiqueta*/
+/*
+selector{
+    propiedad:valor;
+    propiedad:valor
+}
+
+*/
+/* por etiqueta*/
+/* html{
+    font-size: 20px; por defecto 16px
+} */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+    background-image: url(./imagenes/img-card.jpg);
+}
+h2{
+    color: rgba(47, 86, 80,.5);
+}
+h1{
+    background-color: #624E8855;
+    width: 50%;/* se fija cuanto mide de ancho su padre y saca el 50% */
+    height: 100vh;
+}
+a{
+    margin-right: 30px;
+}
+/* por clase -> punto+nombre de la clase .nombre */
+
+.grupo1{
+    color: #624E88;
+    background-color: #F90;
+    width: 50vw;/*50% del ancho de pantalla*/
+    padding-left: 30px;
+}
+
+.img-tarjeta{
+    width: 100%;
+}
+
+.titulo-tarjeta{
+    font-size: 2em;
+    background-color: burlywood;
+    padding: 30px 20px 10px 5px;
+    /*1 valor -> 4 extremos
+    2 valores -> 1ro arriba-abajo | 2do acostados
+    4 valores -> iniciando desde arriba y continuando en sentido horario
+    lo mismo es para margin*/
+    border-radius: 10px;
+    
+}
+/*por id -> #+nombreDeElId*/
+#tarjeta{
+    /* box-sizing: border-box; */
+    width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: 2px violet solid;
+    padding: 10px;
+   /* 
+   border-color: ;
+    border-width: ;
+    border-style: ;
+    */
+}
+#subtitulo1{
+    color: blueviolet;
+}
+button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+/*jerarquia -> id>clase>etiqueta*/
+/* colores primarios -> rojo verde azul 
+-predeterminadas 
+-rgb/rgba - 0-255 -> a transparencia (numero del 0 al 1 )
+-hexadecimal 6 digitos cada par nos indica la cantidad de color primario que quiero -> #+  0-9 A-F 
+para transparencias en hexadecimal (2 digitos mas)
+*/
+/* width /height -> ancho y alto 
+unidades de medida
+% porcentaje 
+vh vw view height y view width -> toma com 100% el ancho/alto de la pantalla 
+px pixeles 
+tipografia 
+-> em (valor del tamaño tipografico del padre)
+-> rem (valor del tramaño tipografico raiz (HTML) por defecto 16px )
+*/
+/*modelo de caja  margin - padding(relleno) - border */
+/*box-sizing -> */

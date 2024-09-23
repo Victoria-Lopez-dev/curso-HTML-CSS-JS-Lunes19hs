@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"><!-- manera mas recomendada-->
+    <!-- <script src="./script.js" async></script> alternativa para incorporar JS -->
+    <title>Clase 1</title>
+    
+</head>
+<body>
+    <style>
+        /* todo el estilo CSS - no es la mas recomendada para incluir CSS*/
+    </style>
+    <nav>
+        <ul>
+            <li><a>Item menu</a</li>
+            <li><a>Item menu</a></li>
+        </ul>
+    </nav>
+    <!-- etiquetas semanticas-->
+     <h1 style="color: red;">Repaso HTML,CSS y JS</h1><!-- titulares : h1(mas importante en todo el documento - 1)- h6-->
+     <h2 id="subtitulo1">Subtitulo</h2>
+     
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ex laudantium laborum magni nulla modi sunt atque, rerum ea excepturi iusto blanditiis optio possimus. Iusto totam autem id quae eius?
+    </p> 
+    <p class="grupo1">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias a dicta et, fugiat ipsa magnam qui beatae cum doloremque reprehenderit! Adipisci quaerat libero esse omnis nam aliquid illo. Voluptatem, obcaecati.
+     </p>
+     <!-- listas : organizadas(ol) - desorganizadas (ul)-items de lista(li) -->
+     <ul>
+        <li class="grupo1">Item</li>
+        <li>Item</li>
+        <li>Item</li>
+     </ul>
+     <ol>
+        <li class="grupo1">Item</li>
+        <li>Item</li>
+        <li>Item</li>
+     </ol>
+      <!-- etiquetas funcionales-->
+       <img src="./imagenes/bao-food-1.png" alt="PNG de comida animada"/><!-- cierra en si mismas - atributos : src(source) alt (texto alternativo)-->
+       <a href="https://www.google.com">Ir a google </a>
+       <!-- ancla / anchor vincular con secciones/paginas/sitios  
+        href -> atributo que indica a donde redirigir-->
+       
+       <a href="#subtitulo1"><!-- selectore de id : #+nombreId del elemento-->
+        <img src="./imagenes/2-circle.svg" alt="icono de nro 2">
+       </a>
+       <button>Click</button>
+        <!-- etiquetas estructurales-->
+
+        <div id="tarjeta"> 
+            <img class="img-tarjeta" src="./imagenes/perrito.jpeg" alt="perrito">
+            <h2 class="titulo-tarjeta">titulo tarjeta</h2>
+            <p>Lorem ipsum dolor sit amet,<span>consectetur </span>adipisicing.</p>
+            <button>Click</button>
+        </div> 
+        <!-- landmarks - etiquetas de maquetacion(indican el area del sitio que reprecentan) 
+        nav - main - header - footer - section -article - aside (podemos modificar sus propiedades de la misma manera que hacemos con los div ) 
+        -->
+        <script src="./script.js"></script><!-- incorporar archivo externo de JS-->
+</body>
+</html>
+<!-- Hyper Text Markup Lenguage 
+ atributos info extra a las etiquetas 
+ 
+ body (cuerpo del sitio)-> todo lo que el usuario ve en el sitio
+
+ screen readers (lectores de pantalla )
+ nombrar : grupo (darles el mismo nombre a varias etiquetas) -> atributo class
+ llamar a una etiqueta en particular -> atributo id (no se pude repetir su nombre en el mismo HTML )
+ -->

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase - 2</title>
+</head>
+<body>
+
+    <style>
+
+        video{
+            width: 400px;
+        }
+        .video-personal{
+            background-color: darkblue;
+            padding: 2px;
+            color: white;
+        }
+     
+    </style>
+    <h1>Usando etiqueas multimedia</h1>
+
+    <video controls muted loop poster="./assets/globos.jpg">
+        <source src="./assets/video/video2.mp4" type="video/mp4"/>
+        <!-- <source src="./assets/video/video2.ogv" type="video/ogv"/> -->
+    </video> 
+    
+    <!--
+    atributos (audio y video ):
+        src-> direccion donde se encuentra el video
+        controls -> barra de reproduccion standar
+        muted -> sin sonido
+        loop -> bucle para que vuelva a arrancar una vez finalizado
+        autoplay -> apenas se carga reproduce
+        poster -> imagen al inicio (antes de reproducirse )
+    -->
+
+   <!-- <audio src=""></audio> ogg mp3-->
+<h2>Barra personalizada</h2>
+   <video >
+
+    <source src="./assets/video/video2.mp4" type="video/mp4"/>
+
+   </video>
+    <div class="video-personal">
+        <button id="play" onclick="reproducir()">PLAY</button>
+        <button id="pausa" onclick="pausar()">PAUSA</button>
+        <button onclick="mutedOnOff()">SACAR SONIDO</button>     
+        <div class="info">
+            <p class="actual"></p>
+            <p class="duracion"></p>
+        </div>   
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
