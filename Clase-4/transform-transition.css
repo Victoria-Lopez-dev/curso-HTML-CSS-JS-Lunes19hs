@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    perspective: 1200px;
+}
+.contendor{
+    width: 200px;
+    box-shadow: 2px 2px  4px #333333;
+    background-color: beige;
+}
+img{
+    width: 100%;
+}
+.translate:hover{
+    transform: translate(-100px,100px);
+    /* translate(x,y) -> + derecha + abajo*/
+}
+
+.mover{
+    transform: translateZ(200px) translateY(200px);/*translate(300px,0px)*/
+}
+
+.rotate{
+    transform: rotateX(50deg);
+    transition: transform 1s ease-in;
+}
+.rotate:active{
+    background-color: red;
+    transform: rotateY(100deg);
+    /* transition: transform 1s ease-in; */
+    /* transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.81,.05,.13,.97); */
+}
+
+.scale{
+    transform: scaleY(0.5) ;
+    /* scale(x,y,z) - scaleX() scaleY() scaleZ()*/
+}
+
+.skew{
+    transform: skew(20deg,45deg);
+    /* skew(x,y) skewY() skewX()*/
+}
+
+.combinado{
+     transform: rotateY(38deg) translateX(100px) scale(1.3);
+}
+/*
+:pseudoclases -> usuario realiza la accion
+transtale -> + derecha| abajo | adelante y - izquierda| arriba|atras
+
+rotate -> deg (degree = grados) + derecha | - izquieda
+
+scale -> numeros sin unidad 
+
+skew -> grados - deg 
+perspective -> padre darle profundidad/distancia con la pantalla
+
+transition -> cambios de la propiedad de manera progresiva 
+
+duracion -> s(segundos) ms(milisegundos) 
+ease-in -cubric-bezier() -> velocidad de la transicion 
+https://cubic-bezier.com/
+
+*/

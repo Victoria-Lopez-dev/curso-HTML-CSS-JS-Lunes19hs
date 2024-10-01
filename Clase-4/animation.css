@@ -1,0 +1,83 @@
+button{
+    padding: 20px;
+    /*animation-name:cambioColor ;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.75,.07,.79,.21);
+    animation-iteration-count: 4;/*cuantas veces repetir la animacion*/
+    animation-direction: alternate;
+    /* indica el sentido de la animacino
+    alternate (alterna entre el sentido normal y opuesto 
+    animation-delay: 2s;
+      animation-fill-mode: backwards; como queda una vez finalizada la animacion 
+    */
+   
+/* animation:cambioColor 2s cubic-bezier(.75,.07,.79,.21) 2s infinite alternate; */
+    background-color: lightblue;
+    box-shadow: 2px 2px #6f6e6e;
+    
+}
+
+button:hover{
+    transform: translate(2px,2px);
+    box-shadow: none;
+}
+
+.contenedor{
+    background-color: rgb(195, 231, 151);
+    margin-top: 20px;
+    padding: 120px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    perspective-origin: top;/* mirada del elemento top-bottom-center*/
+}
+
+.cubo{
+    width: 200px;
+    height: 200px;
+}
+.padre{
+    background-color: coral;
+    transform: rotateY(70deg);
+    transform-style: preserve-3d;
+   animation: girar 4s infinite alternate;
+}
+.hijo{
+    background-color: darkmagenta;
+    transform: rotateY(70deg);
+}
+
+@keyframes cambioColor{
+    from{
+        background-color: cadetblue;
+        color: black;
+    }
+    to{
+        background-color: brown;
+        color: white;
+    }
+}
+
+@keyframes girar{
+    0%{
+        transform: rotateY(40deg);
+        background-color: #F90;
+    }
+    23%{
+        transform: rotateY(55deg);
+    }
+    40%{
+        transform: rotateY(100deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+        background-color: rgb(61, 49, 96);
+    }
+}
+
+/*
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+*/
