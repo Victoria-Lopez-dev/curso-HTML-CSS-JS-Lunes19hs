@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase 7</title>
+</head>
+<body>
+    <header>
+        <h1>Usando SVG</h1>
+        <a href="../Clase-1/index.html">
+            <svg class="ejemplo1">
+                <circle
+                    r="30"
+                    cx="50"
+                    cy="50"
+                    fill="pink"
+                ></circle>
+                <circle
+                    r="30"
+                    cx="90"
+                    cy="50"
+                    fill="pink"
+                ></circle>
+                <polygon
+                    points="30 71,110 71,70 100"
+                    fill="pink"
+                ></polygon>
+        </svg>            
+        </a>
+
+    </header>
+    <img src="./assets/globos.jpg" alt="">
+    <img src="./assets/ballons.png" alt=""/>
+    <img src="./assets/undraw_product_iteration_kjok.svg" alt="">
+    <img src="./assets/list.svg" alt="">
+    
+    <a class="boton" target="_blank" href="../Clase-4/index.html">Ir a clase 4</a>
+    <svg class="svg1">
+        <rect
+            x="100"
+            y="100"
+            width="50"
+            height="100"
+            fill="none"
+            stroke=" var(--colorA)"
+            stroke-width="6"
+            rx="10"
+        >
+    </rect>
+        <rect
+            x="80"
+            y="50"
+            width="90"
+            height="90"
+            fill="rgb(50,33,44)"
+            id="rect2"
+            >
+        </rect>
+        <circle
+            cx="200"
+            cy="200"
+            r="60"
+            fill="yellow"
+            stroke="black"
+        ></circle>
+        <ellipse
+            cx="200"
+            cy="200"
+            rx="160"
+            ry="40"            
+            stroke="#223388"
+            fill="none"
+            stroke-width="5"
+        ></ellipse>
+
+        <line 
+        x1="300" 
+        y1="100" 
+        x2="400" 
+        y2="50" 
+        stroke="darkred"
+        ></line>
+        
+        <polyline points="200 50, 100 133, 50 50" stroke-width="4" stroke="#33FF55" fill="none"></polyline>
+
+        <polygon points="200 50, 220 33, 350 50,300 10" stroke-width="4" stroke="#F90" fill="none"></polygon>
+    </svg>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<!--
+Bootstrap
+React - Angular 
+hacer sitios /proyectos
+
+IA - copilot - prompt ingenier(dar instrucciones a la IA)
+-->
+
+<!-- 
+x , y ,cx,cy -> coordenadas para iniciar el grafico, centro de circunferencia
+width- height
+
+fill -> color relleno
+stroke -> color del borde
+stroke-width -> ancho del borde
+
+podemos utilizar variables creadas en :root
+
+rx -> redondear los bordes
+r -> radio de circunferencia
+points -> par de coordenadas xy
+-->

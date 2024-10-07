@@ -1,0 +1,56 @@
+:root{
+    --colorA:#4b33ff;
+
+}
+
+body{
+    background-color: cadetblue;
+}
+.boton{
+    background-color: coral;
+    padding: 10px;
+    text-decoration: none;
+    color: darkblue;
+    display: block;
+    margin-bottom: 30px;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 300px;
+}
+.svg1{
+    width: 500px;
+    height: 300px;
+    /* border: 2px solid black; */
+    transform: scale(1.2);
+}
+ellipse{
+    animation: rotar 3s 4;
+    animation-direction: alternate;
+
+}
+.ejemplo1{
+    width: 200px;
+    height: 200px;
+    animation:escalar 3s infinite alternate
+}
+@keyframes rotar {
+    from{
+        transform: rotate(30deg);
+    }
+    to{
+        transform: rotate(390deg);
+    }
+}
+
+@keyframes escalar {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
