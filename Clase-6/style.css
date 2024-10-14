@@ -1,0 +1,8 @@
+canvas{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    background-image: url(../Clase-4/assets/img-1.jpg);
+    background-size: cover;
+    display: block;
+}
